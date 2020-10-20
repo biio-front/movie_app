@@ -1,0 +1,56 @@
+.movies .movie {
+  width: 45%;
+  min-width: 400px;
+  background-color: #fff;
+  display: flex;
+  margin: var(--margin) 0;
+  box-shadow: 0 0 10px black;
+  border-radius: 5px;
+}
+
+.movie img {
+  width: 167px;
+  height: 250px;
+  position: relative;
+  top: -20px;
+  margin-left: var(--padding);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+.movie__data {
+  padding: var(--padding);
+}
+
+.movie__yearAndRuntime {
+  color: var(--color-lightgrey);
+  font-size: var(--font-small);
+}
+
+.genres {
+  width: 100%;
+  color: var(--color-lightgrey);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: var(--font-small);
+}
+
+.genres li {
+  margin-right: var(--margin-s);
+}
+
+.movie__rating {
+  color: var(--color-lightgrey);
+}
+
+.movie__summary {
+  color: var(--color--grey);
+  padding-top: var(--padding);
+}
+
+@media screen and (max-width: 425px) {
+  .movies .movie {
+    flex-direction: column;
+    min-width: 0px;
+    width: 80%;
+  }
+}
